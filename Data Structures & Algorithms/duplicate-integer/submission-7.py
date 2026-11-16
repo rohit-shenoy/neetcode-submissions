@@ -1,0 +1,9 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        myMap = {}
+
+        for num in nums:
+            if num in myMap:
+                return True
+            myMap[num] = -1
+        return False
